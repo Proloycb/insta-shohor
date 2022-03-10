@@ -40,12 +40,14 @@ const switchTab = (id) => {
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
         document.getElementById( "liked" ).innerText = '';
+        document.getElementById( "question-part" ).style.display = 'none';
         displayLikedPosts();
     } else {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).innerText = '';
+        document.getElementById( "question-part" ).style.display = 'none';
         displayReportedPosts();
     }
 };
